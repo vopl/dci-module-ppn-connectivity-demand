@@ -44,7 +44,7 @@ namespace dci::module::ppn::connectivity
 
                 _registry.setIntensity(std::atof(c.get("intensity", "10").data()));
 
-                return cmt::readyFuture<>();
+                return cmt::readyFuture(None{});
             };
         }
 
